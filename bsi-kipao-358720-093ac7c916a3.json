@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bsi-kipao-358720",
+  "private_key_id": "093ac7c916a3ea7b683d3de237e825e01e5ddc8a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCY4kJBw4PP5adT\nsMll6SkUTcjVOWovS2GhE/mZ6ezZGmEPXAIxhn3tulukWoq8IYZkx2xZLQFKEAHt\n3mGvbWFVYqxeGwyG8clDYRJCLRcACDMW6VNImYr/VaQwAB27QSf40YXd+q+AYCke\neMDVplxNI7AWIRBjPiNNTyoUdQ8j6mdLdhlVNbL8Y5Vc1HRIR+x9qYPZ3nKwg99g\nfZ3Tue4Holz2L+QVYUb0uhkVbptVKwgwT0YORCh9VOlNvMWyaKj81NLSVzps5vEw\nM9wyvS9axsRp1VmVetcuJrE/obVGrLJMznz4Eh6KBY2QNdzoeBqq4OU3QN8qBw8Y\njibIXEjBAgMBAAECggEAFyyEuo82VbcL7AWqIYZ8MZWw0ZFIZS7Z956dgRUST75N\n5BQgSP2H7RcIeRs4WFgElRYdeE74GQ/gGvxQdlTwIg847XLQLUxNI6d9KwbGq7yS\ncfCgLSsJBLcokhYSa6XutyqbThCHtb/du762DCyRZSf5swEECOcMVtWfHUa5KspL\nLaq77TC0uQZFOu9+U+Rf/fpRQphOLjTAOsZAUn3HbNNjTklyhyW5utoWwyKydatY\nejz+pbpCW9rKP2UvZ8s1CiiXwBou/w+MGypnf+QOy89k/KIBHHfiSZZGOFe9mAuf\nH6hx7I9Nzm6lftfLm4WTboH3XuZ0axUMdNZ+kPU7uQKBgQDJgQytp+vIgkqvT3b+\n3EgN6dW64spt/pGngkUKvW1/PRRS5QYbqxmZmy0gJQLfs1eTbIpF/VNPm7OCZJ/v\nSKoJP5cnyCaATPhJJoWrBEPLDZlzlbyZI26Fu+gG2ay4KWbWWYVKvv3PKWEtM0uS\n0PtiteRX8FodV1HCQfxexJ3XxwKBgQDCOweBOP9xUB4zYgbj42ZixNWBZ2U5xK7K\n33IQq92ScQI1HIjAGhOzudUWSRV3EwNieotoNdH477kOaU7CY+eg47MHBWYYJ0na\nODVDAb+sxTWKp+a2fG7/gtOEwg9uMvCiFtwYr0fkcD9BqH3JJ+XjMnAbqPygsdbd\nXBXk5CerNwKBgBiyGDuwONV6Im0Z8BuMI8iQwAEHioewi2lcLdoDHUha1ALUzsrV\nTW3l9sHZx2BjOnh29Pte8Lbw/i8c5f0NislXYc8eWJmg1U0hy4AKJcTdBdGEqHic\nPw9k2Cr+woxPhqr+jbd7cN/S0nYXs0trEWQnprSgYGr4KK0GKUf0EORBAoGAFsaf\nQaryYVI4yGO1VSHETs6wDqWWPCjxKj77fDL7H4H69UlsS8KDDu86qotVZgonunOO\nR2EQRzWtKKB2qNrYPYiV5LvgVfK9eUZgEIRy+oqBlcnMhxeeWH352bZ74rs8dnVh\nx88+Ce6TrFparaztCzBN7yBox1szS+/RbW7HrA8CgYAF0aRkOQ55l1JbEmmYNsHh\nZRGPpx8tt49PBnSfJYk1yUPhE4ebk3r0i5tupkIfri0+gDkRcEy10uVtlY4IVnXE\nsC8wMMVM3W4woAx61Rj34C3NwMcTebD+TX9R8CZYL4tOSwRFAh7ZrV/fdIL22ROl\nedVF38PGlNaudfIF4NhX9A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tiroliro@bsi-kipao-358720.iam.gserviceaccount.com",
+  "client_id": "107189638796565382909",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tiroliro%40bsi-kipao-358720.iam.gserviceaccount.com"
+}
