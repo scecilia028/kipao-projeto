@@ -2,6 +2,8 @@ package br.unirio.kipao.controllers;
 
 import java.util.ArrayList;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,6 +21,8 @@ import br.unirio.kipao.model.Item;
 import br.unirio.kipao.model.Order;
 import br.unirio.kipao.model.Product;
 import br.unirio.kipao.model.dto.ErrorDTO;
+import br.unirio.kipao.security.roles.IsCustomer;
+import br.unirio.kipao.security.roles.IsEmployee;
 import br.unirio.kipao.service.CustomerService;
 import br.unirio.kipao.service.ItemService;
 import br.unirio.kipao.service.OrderService;
@@ -72,7 +76,7 @@ public class PublicController {
 	public ResponseEntity createItem(@RequestBody Item item) {
 		try {
 //			Customer customer = customerService.getCustomerByLoggedUser();
-			Customer customer = customerService.getCustomerById(Long.parseLong("7"));
+			Customer customer = customerService.getCustomerById(Long.parseLong("8"));
 			return ResponseEntity.ok(itemService.saveItem(item, customer));			
 		} catch (Exception e) {
 			ErrorDTO error = new ErrorDTO(e.getMessage());
@@ -110,14 +114,35 @@ public class PublicController {
 		return ResponseEntity.ok(orderService.getOrders());	
 	}
 		
-	@DeleteMapping("product")
-	public ResponseEntity deleteProduct(@RequestBody Product product) {
+	@DeleteMapping("product/{name}")
+	public ResponseEntity deleteProduct(@PathVariable(value = "name") String nameProduct) {
 		try {
-			return ResponseEntity.ok(productService.deleteProduct(product));
+			return ResponseEntity.ok(productService.deleteProduct(nameProduct));
 			
 		} catch (ProductAlreadyDeleted e) {
 			ErrorDTO error = new ErrorDTO(e.getMessage());
 			
+			return ResponseEntity.badRequest().body(error);
+		}
+	}
+	
+	@PutMapping("customer")
+	public ResponseEntity<?> saveCustomer(@RequestBody Customer customer) {
+				
+		try {
+			return ResponseEntity.ok().body(customerService.createCustomer(customer));
+		}catch(Exception e ) {
+			ErrorDTO error = new ErrorDTO("O usuário nao pode ser cadadstrado");
+			return ResponseEntity.badRequest().body(error);
+		}
+	}
+	
+	@GetMapping("/customer/{id}")
+	public ResponseEntity<?> getCustomer(@PathVariable(value = "id") Long id) {
+		try {
+			return ResponseEntity.ok(customerService.getCustomerById(id));
+		}catch(Exception e ) {
+			ErrorDTO error = new ErrorDTO("O usuário não foi encontrado");
 			return ResponseEntity.badRequest().body(error);
 		}
 	}
