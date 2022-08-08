@@ -19,6 +19,7 @@ import lombok.EqualsAndHashCode;
 @PrimaryKeyJoinColumn(name="id")
 public class Customer extends Person {
 	
+	private String name;
 	private String phone;
 	private String cellphone;
 	
